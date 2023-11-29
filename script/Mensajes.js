@@ -10,3 +10,7 @@ function Waring(){
     confirmButtonText: 'Cool'
   });
 }
+
+function Mensaje(mensaje: String})){
+  Swal.fire(Mensaje);
+}
