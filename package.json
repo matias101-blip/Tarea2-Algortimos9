@@ -1,5 +1,8 @@
 {
   "dependencies": {
-    "sweetalert2": "^11.10.1"
+    "@types/toastr": "^2.1.43",
+    "livereload": "^0.9.3",
+    "sweetalert2": "^11.10.1",
+    "typescript": "^5.3.2"
   }
 }

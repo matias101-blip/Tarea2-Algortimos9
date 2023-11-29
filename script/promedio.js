@@ -1,3 +1,4 @@
+"use strict";
 var Notas = [], nota_num = 1;
 var Notas_ul = document.getElementById("notas-ul");
 function Optenerdatos() {
@@ -15,7 +16,7 @@ function aniadir_notas() {
 }
 function Promediar() {
     if (Notas.length == 0) {
-        alert("Ingrese notas porfavor");
+        Waring();
     }
     else {
         var sub_promedio = 0, resultado = void 0;
