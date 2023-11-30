@@ -19,12 +19,12 @@ function Promediar() {
         Waring();
     }
     else {
-        var sub_promedio = 0, resultado = void 0;
+        var sub_promedio = 0, resultado_1;
         for (var i = 0; i < Notas.length; i++) {
             sub_promedio = sub_promedio + Notas[i];
         }
-        resultado = "El promedio es de: ".concat(Math.round(sub_promedio / i));
-        document.getElementById("promedio").innerText = resultado;
+        resultado_1 = "El promedio es de: ".concat(Math.round(sub_promedio / i));
+        document.getElementById("promedio").innerText = resultado_1;
         Notas = [];
         while (Notas_ul.firstChild) {
             Notas_ul.removeChild(Notas_ul.firstChild);
