@@ -4,6 +4,11 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+li{
+  text-align: left;
+  margin: 10px;
+}
+
 .nav-bar {
   height: 4.5em;
   display: flex;
