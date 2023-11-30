@@ -1,8 +1,8 @@
-function Saludar(){
+function Saludar() {
   Swal.fire(`Hola!!!, Bievenido a este sitio UwU`);
 }
 
-function Waring(){
+function Waring() {
   Swal.fire({
     title: 'Peligro',
     text: 'Porfavor ingrese las notas.',
@@ -11,6 +11,6 @@ function Waring(){
   });
 }
 
-function Mensaje(mensaje: String})){
-  Swal.fire(Mensaje);
+function Mensaje(mensaje){
+  Swal.fire(mensaje);
 }
