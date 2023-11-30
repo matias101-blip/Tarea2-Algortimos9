@@ -2,10 +2,10 @@ function Mayordeedad(){
     var edad;
     edad = document.getElementById("edad").value,10;
     if (edad >= 18){
-        mensaje = "Eres mayor de edad ";
+        mensaje = "Puedes votar";
         Mensaje(mensaje);
     }else {
-        mensaje = "Eres menor de edad";
+       mensaje = "No puedes votar";
         Mensaje(mensaje);
     }
 }
