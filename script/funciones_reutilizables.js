@@ -29,9 +29,20 @@ function AreaTriangulo(base, altura) {
     area = base * altura;
     return area;
 }
-var resultado, area, base, altura;
-base = 10;
-altura = 5;
-area = AreaTriangulo(base, altura);
-resultado = "EL area del triangulo es ".concat(area);
-Mensaje(resultado);
+function SaludarNombre() {
+    Nombre().then(function (result) {
+        if (result.isConfirmed) {
+            var valor = result.value;
+            Mensaje("Hola como estas ".concat(valor));
+        }
+        else {
+            Mensaje("No ingresaste tu nombre");
+        }
+    });
+}
+function convertirCaF() {
+    var celcius, fahrenheit;
+    celcius = 25;
+    fahrenheit = 32 + (celcius * 9 / 5);
+    return fahrenheit;
+}
