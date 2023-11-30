@@ -14,3 +14,12 @@ function Waring() {
 function Mensaje(mensaje){
   Swal.fire(mensaje);
 }
+
+function Nombre(){
+  return Swal.fire({
+    title: 'Ingrese su nombre:',
+    input: 'text',
+    inputPlacerholder: 'Escriba aqui',
+    showCancelButton: true
+  });
+}
