@@ -48,6 +48,7 @@ a {
   margin: 6px;
   overflow: hidden;
   cursor: pointer;
+  padding: 10px;
 }
 
 .sub-contenedores img {
