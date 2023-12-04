@@ -3,16 +3,11 @@
 
 <head>
   <meta charset="utf-8">
-  <script type="module">
-    import sweetalert2 from 'https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/+esm'
-  </script>
+  <link rel="stylesheet" href="../node_modules/sweetalert2/dist/sweetalert2.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles/index.css">
 
-  <title>Secuenciales</title>
+  <title>Menu</title>
 </head>
 
 <body>
@@ -21,39 +16,58 @@
       <img src="../img/unemi-logo.png" alt="logo">
       <p><a href="../index.html">Inicio</a></p>
     </nav>
-
-    <div class="head">
-      <h1>Secuenciales:</h1>
-    </div>
+    <h1>Menu principal:</h1>
   </header>
   <div class="contenedor">
-    <div data-value="Expresiones.html" class="sub-contenedores ExprecionesMath">
-      <h2>Suma de elementos:</h2>
-      <p>Mediante un arreglo de numeros enteros se suman todos sus elemento.</p>
+    <div class="sub-contenedores">
+      <h2>Ejercicio 1</h2>
+      <p>Dado a=3 y b=7, encuentra el valor de y = 2 * a + b - a mod 3</p>
+      <button onclick="Ejercicio1()" type="button" name="Ejercicio1">Ejecutar</button>
     </div>
-    <div data-value="Secuenciales.html" class="sub-contenedores Secuenciales">
-      <h2>Promedio de Calificaciones:</h2>
-      <p>Mediante un arreglo de calificaciones se sacara el promedio.</p>
+    <div class="sub-contenedores">
+      <h2>Ejercicio 2</h2>
+      <p>Si a=10 y b=4, calcula el valor de z = a * b + 3 mod a + b.</p>
+      <button onclick="Ejercicio2()" type="button" name="button">Ejecutar</button>
     </div>
-    <div data-value="Condicionales.html" class="sub-contenedores Condicionales">
-      <h2>Mayor y menor valor:</h2>
-      <p>En cuentra el el valor minimo y maximo en un arreglo.</p>
+    <div class="sub-contenedores">
+      <h2>Ejercicio 3</h2>
+      <p>Con a=6 y b=2, determina el valor de w = a - b + 2 * a mod b.</p>
+      <button onclick="Ejercicio3()" type="button" name="button">Ejecutar</button>
     </div>
-    <div data-value="Bucles.html" class="sub-contenedores Bucles">
-      <h2>Buscar un elemento:</h2>
-      <p>Pide al usuario un numero y lo busca si esta presente en el arreglo.</p>
+    <div class="sub-contenedores">
+      <h2>Ejercicio 4</h2>
+      <p>Para a=8 y b=5, encuentra el valor de v = 2 * b + a div 2 + 4 * b mod a</p>
+      <button onclick="Ejercicio4()" type="button" name="button">Ejecutar</button>
     </div>
-    <div data-value="Arreglos.html" class="sub-contenedores Arreglos">
-      <h2>Contar elementos pares:</h2>
-      <p>En un arreglo de numeros pares se contaran los numeros pares que se encuentre.</p>
+    <div class="sub-contenedores">
+      <h2>Ejercicio 5</h2>
+      <p>Si a=12 y b=9, calcula el valor de u = b - a + 3 * a mod b</p>
+      <button onclick="Ejercicio5()" type="button" name="button">Ejecutar</button>
     </div>
-    <div data-value="Arreglos.html" class="sub-contenedores Arreglos">
-      <h2>Inversion de un arreglo:</h2>
-      <p>Se invierte el orden de un arreglo.</p>
+    <div class="sub-contenedores">
+      <h2>Ejercicio 6</h2>
+      <p>(5 + 3 * 2) + 9 > 3 * 5 * 14 % 3</p>
+      <button onclick="Ejercicio6()" type="button" name="button">Ejecutar</button>
     </div>
-    <div data-value="Arreglos.html" class="sub-contenedores Arreglos">
-      <h2>Buscar indice:</h2>
-      <p>El ususario ingresa un valor y se buscara en el arreglo si, el valor esta mas de una vez se mostrara todos los indices.</p>
+    <div class="sub-contenedores">
+      <h2>Ejercicio 7</h2>
+      <p>2 *(4 - 10 + 8)/2* 36 *(1/2)</p>
+      <button onclick="Ejercicio7()" type="button" name="button">Ejecutar</button>
+    </div>
+    <div class="sub-contenedores">
+      <h2>Ejercicio 8</h2>
+      <p>260 / 12 + 54 % 3 - 85 % 7</p>
+      <button onclick="Ejercicio8()" type="button" name="button">Ejecutar</button>
+    </div>
+    <div class="sub-contenedores">
+      <h2>Ejercicio 9</h2>
+      <p>(48 < 2 * 3) | | (2 * 7 < 12)</p>
+      <button onclick="Ejercicio9()" type="button" name="button">Ejecutar</button>
+    </div>
+    <div class="sub-contenedores">
+      <h2>Ejercicio 10</h2>
+      <p>((8 > 2) | | (932 < 23) ) && 4==2</p>
+      <button onclick="Ejercicio10()" type="button" name="button">Ejecutar</button>
     </div>
   </div>
 
@@ -62,9 +76,9 @@
   </footer>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../node_modules/sweetalert2/dist/sweetalert2.all.js"></script>
   <script src="../script/Mensajes.js" charset="utf-8"></script>
-  <script src="./script/div-click.js" charset="utf-8"></script>
+  <script src="../script/Expresiones.js" charset="utf-8"></script>
 </body>
 
 </html>
