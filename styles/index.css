@@ -71,6 +71,32 @@ a {
   margin: 9px 0;
 }
 
+.sub-contenedores button{
+  margin-top: 0.6em;
+}
+
 .footer{
   font-weight: 700px;
+}
+
+#caontenedorLoad{
+  margin: 0.6em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader{
+  border: 8px solid rgb(255, 255, 255);
+  border-top: 8px solid rgb(70, 149, 148);
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  animation: carga 3s linear infinite;
+}
+
+@keyframes carga {
+  0% { transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
 }
