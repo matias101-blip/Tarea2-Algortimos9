@@ -4,9 +4,12 @@ function quincena(){
 	if (dia <= 15){
         mensaje = "Pertenece a la primera quincena";
         Mensaje(mensaje);
-    } else if (dia >= 16){
+    } else if ((dia >= 16) && (dia <= 31)) {
         mensaje = "Pertenece a la segunda quincena";
         Mensaje(mensaje);
+    } else {
+        mensaje = "Dia no valido";
+        Mensaje(mensaje);
     }
-		
+
 }
