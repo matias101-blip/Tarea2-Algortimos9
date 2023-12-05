@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(66, 66, 66);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contenedor{
+    background-color: red;
+    width: 12.2em;
+    border: 1px solid black;
+    margin: 3px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 6%;
+
+}
+
+.contenedor button :hover{
+    background-color: blue;
+}
