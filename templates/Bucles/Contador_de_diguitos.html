@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../styles/skeleton.css">
+  <link rel="stylesheet" href="../../styles/style.css">
+  <title>Contador de digitos</title>
+</head>
+
+<body>
+  <header>
+    <nav class="nav-bar u-full-width">
+      <img src="../../img/unemi-logo.png" alt="logo">
+      <p><a href="../../index.html">Inicio</a></p>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="hero sub-contenedor">
+      <h2>Contador de dígitos</h2>
+      <div class="mini-contenedor">
+        <div class="entrada">
+          <p>Ingrese una frase:</p>
+          <input type="text" id="text">
+        </div>
+      </div>
+      <button onclick="ContadorDeDigitos()">Contar</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../../script/Mensajes.js" charset="utf-8"></script>
+  <script src="../../script/Bucles/Contador-digitos.js"></script>
+</body>
+
+</html>

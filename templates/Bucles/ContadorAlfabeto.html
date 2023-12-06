@@ -1,17 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contador de alfabeto</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../styles/skeleton.css">
+  <link rel="stylesheet" href="../../styles/style.css">
+  <title>Contador de alfabeto</title>
 </head>
+
 <body>
-    <div>
-        <h2>Contador de alfabeto</h2>
-        <p>Ingrese una palabra</p>
-        <input type="text" id="palabra">
-        <button onclick="contadoralfabeto()">Contar</button>
+  <header>
+    <nav class="nav-bar u-full-width">
+      <img src="../../img/unemi-logo.png" alt="logo">
+      <p><a href="../../index.html">Inicio</a></p>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="hero sub-contenedor">
+      <h2>Contador de alfabeto</h2>
+      <div class="mini-contenedor">
+        <div class="entrada">
+          <p>Ingrese una palabra:</p>
+          <input placeholder="Ingrese una palabra." type="text" id="palabra">
+        </div>
+      </div>
+      <button onclick="contadoralfabeto()">Contar</button>
     </div>
-    <script src="../../script/Bucles/ContadorAlfabeto.js"></script>
+  </div>
+
+
+  <script src="../../script/Bucles/ContadorAlfabeto.js"></script>
 </body>
+
 </html>

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../styles/skeleton.css">
   <link rel="stylesheet" href="../../styles/style.css">
-  <title>Contador de caracteres</title>
+  <title>Suma de numeros pares</title>
 </head>
 
 <body>
@@ -16,22 +16,22 @@
       <p><a href="../../index.html">Inicio</a></p>
     </nav>
   </header>
-
-  <div class="container">
+  <div class="container ">
     <div class="hero sub-contenedor">
-      <h2>Contador de caracteres</h2>
+      <h2>Adivina el numero</h2>
+      <h3>Ingrese un numero:</h3>
       <div class="mini-contenedor">
         <div class="entrada">
-          <p>Ingrese una palabra:</p>
-          <input placeholder="Ingrese una palabra." type="text" id="palabra">
+          <p>Ingrese un numero:</p>
+          <input id="numero" placeholder="Ingrese un numero"  type="number" name="" value="">
         </div>
       </div>
-      <button onclick="contadorcaracteres()">Contar</button>
+      <button onclick="Adivinar()">Adivinar</button>
     </div>
   </div>
-
-
-  <script src="../../script/Bucles/ContadorCaracteres.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../../script/Mensajes.js" charset="utf-8"></script>
+  <script src="../../script/Bucles/Adivina-el-numero.js"></script>
 </body>
 
 </html>
