@@ -35,6 +35,15 @@ a {
   width: 60%;
 }
 
+.sub-contenedores{
+  margin: 0.2em;
+  height: 22em;
+  padding: 0.5em;
+}
+
+.sub-contenedores h2{
+  font-size: 2em;
+}
 
 .sub-contenedores img {
   width: 100%;
