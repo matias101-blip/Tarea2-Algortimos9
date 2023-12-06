@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../../styles/skeleton.css">
+  <link rel="stylesheet" href="../../styles/style.css">
+  <title>Promedios</title>
+</head>
+
+<body>
+  <header>
+    <nav class="nav-bar u-full-width">
+      <img src="../../img/unemi-logo.png" alt="logo">
+      <p><a href="../../index.html">Inicio</a></p>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="hero sub-contenedor">
+      <h1>Calcular Promedios</h1>
+      <div class="mini-contenedor">
+        <div class="entrada">
+          <input id="nota" type="number" placeholder="Ingrese una nota">
+          <button onclick="aniadir_notas()" type="button">Añadir nota</button>
+        </div>
+        <div class="resultado">
+          <label id="promedio" for="promedio">Promedio de:</label>
+          <button onclick="Promediar()" type="button">Promediar</button>
+        </div>
+        <p>Notas:</p>
+        <ul id="notas-ul"></ul>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../../script/Mensajes.js" charset="utf-8"></script>
+  <script src="../../script/Arreglos/promedio.js" charset="utf-8"></script>
+</body>
+
+</html>
