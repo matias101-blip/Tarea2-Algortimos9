@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../styles/skeleton.css">
+  <link rel="stylesheet" href="../../styles/style.css">
+  <title>Tabla de Multiplicar</title>
+</head>
+
+<body>
+  <header>
+    <nav class="nav-bar u-full-width">
+      <img src="../../img/unemi-logo.png" alt="logo">
+      <p><a href="../../index.html">Inicio</a></p>
+    </nav>
+  </header>
+  <div class="container ">
+    <div class="hero sub-contenedor">
+      <h2>Suma de numeros pares.</h2>
+      <h3>Se sumaran los numeros pares del 1 al 50.</h3>
+      <div class="mini-contenedor">
+        <div class="entrada">
+          <p>Ingrese el numero que desea la tabla</p>
+          <input id="numero" type="number" placeholder="Ingrese un numero" name="" value="">
+        </div>
+      </div>
+      <button onclick="Multiplicar()">Mostrar Tabla</button>
+      <div class="mini-contenedor">
+        <table id="tabla">
+          <th>La tabla de multiplicar es:</th>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../../script/Mensajes.js" charset="utf-8"></script>
+  <script src="../../script/Bucles/TablaDeMultiplicar.js"></script>
+</body>
+
+</html>
