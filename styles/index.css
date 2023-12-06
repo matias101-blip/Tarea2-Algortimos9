@@ -41,6 +41,27 @@ a {
   padding: 0.5em;
 }
 
+.sub-contenedores:hover{
+  border-radius: 5px;
+  border: 2px solid blue;
+}
+
+/*Animacion*/
+@keyframes BodersSolid{
+  25%{
+    border-top:rgba(18, 133, 176, 0.64);
+  }
+  50%{
+    border-left:rgba(18, 133, 176, 0.64);
+  }
+  75%{
+    border-right: rgba(18, 133, 176, 0.64);
+  }
+  100%{
+    border-bottom:rgba(18, 133, 176, 0.64);
+  }
+}
+
 .sub-contenedores h2{
   font-size: 2em;
 }
