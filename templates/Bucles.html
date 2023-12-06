@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles/skeleton.css">
   <link rel="stylesheet" href="../styles/index.css">
 
   <title>Arreglo</title>
@@ -23,51 +24,77 @@
       <p><a href="../index.html">Inicio</a></p>
     </nav>
 
-    <div class="head">
+    <div class="hero left">
       <h1>Bucles:</h1>
-      <p>Me diante un bucle for para contar el numero de diguitos en una palabra.</p>
+    </div>
+    <div class="top">
+      <p>Permiten repetir un bloque de código varias veces. Los más utilizados son el bucle
+        while(mientras) y el bucle for(para</p>
     </div>
   </header>
-  <div class="contenedor">
-    <div class="sub-contenedores">
-      <h2>Tabla de multiplicar:</h2>
-      <p>Ingrese un numero: </p>
-      <input type="number" name="numero" id="numero_mul">
-      <button onclick="TablaDeMultiplicar()"  type="button" name="button">Mostrar tabla</button>
-      <button onclick="Clear()" type="button" name="button">Limpiar</button>
-      <ul id="tabla"></ul>
+  <div class="container">
+    <div class="row">
+      <div data-value="" class="four columns sub-contenedores ExprecionesMath top-hero">
+        <h2>Suma de Numeros pares:</h2>
+        <p>Utiliza un bucle for para calcular la suma de los
+          números pares del 1 al 50.</p>
+      </div>
+      <div data-value="" class="four columns sub-contenedores ExprecionesMath top-hero">
+        <h2>Tabla de Multiplicar:</h2>
+        <p>Utiliza un bucle for para imprimir la tabla de multiplicar de
+          un número ingresado por el usuario del 1 al 12</p>
+      </div>
+      <div data-value="" class="four columns sub-contenedores ExprecionesMath top-hero">
+        <h2>Contador de vocales:</h2>
+        <p>Utiliza un bucle while para contar el número de vocales en una
+          palabra ingresada por el usuario.</p>
+      </div>
+      <div data-value="" class="four columns sub-contenedores ExprecionesMath top">
+        <h2>Contador de digitos:</h2>
+        <p>Utiliza un bucle for para contar el numero de dígitos en
+          una palabra ingresada por el usuario</p>
+      </div>
+      <div data-value="" class="four columns sub-contenedores ExprecionesMath top">
+        <h2>Adivina el numero:</h2>
+        <p>Genera un número aleatorio y pide al usuario que adivine el
+          número. Utiliza un bucle while para repetir la solicitud hasta que adivine
+          correctamente</p>
+      </div>
+      <div data-value="" class="four columns sub-contenedores ExprecionesMath top">
+        <h2>Contador de Alfabeto:</h2>
+        <p>Utiliza un bucle for para contar el número de letras del
+          alfabeto(a..z) en una palabra ingresada por el usuario</p>
+      </div>
+      <div data-value="" class="four columns sub-contenedores ExprecionesMath bottom">
+        <h2>Suma de numeros impares:</h2>
+        <p>Utiliza un bucle while para calcular la suma de los
+          números impares del 1 al 100.</p>
+      </div>
+      <div data-value="" class="four columns sub-contenedores ExprecionesMath bottom">
+        <h2>Contador de caracteres:</h2>
+        <p>Escribir un programa que lea una palabra y presenta
+          cuantos caracteres hay en dicha palabra.</p>
+      </div>
+      <div data-value="" class="four columns sub-contenedores ExprecionesMath bottom">
+        <h2>Suma de números:</h2>
+        <p>Pide al usuario que ingrese números enteros positivos uno
+          por uno y utiliza un bucle while para calcular la suma de estos números. El ciclo
+          debe terminar cuando el usuario ingrese un número negativo.</p>
+      </div>
+      <div data-value="" class="four columns sub-contenedores ExprecionesMath top">
+        <h2>Cuenta regresiva:</h2>
+        <p>Pide al usuario que ingrese un número entero positivo y utiliza
+          un bucle while para mostrar una cuenta regresiva desde ese número hasta 1.</p>
+      </div>
     </div>
-    <div class="sub-contenedores">
-      <h2>Contador de Vocales</h2>
-      <p>Ingrese un palabra:</p>
-      <input id="vocales" type="text" name="" value="">
-      <button onclick="contarVocales()" type="button" name="button">Contar Vocales</button>
-    </div>
-    <div class="sub-contenedores">
-      <h2>Contador de digitos</h2>
-      <h3>Ingrese una palabra:</h3>
-      <input id="text" type="text" name="" value="">
-      <button onclick="ContadorDeDigitos()" type="button" name="button">Verificar</button>
-    </div>
-    <div class="sub-contenedores">
-      <h2>Adivina el numero</h2>
-      <h3>Ingrese un numero:</h3>
-      <input id="numero" type="number">
-      <button onclick="Adivinar()" type="button" name="button">Verificar</button>
-    </div>
-    <div class="sub-contenedores">
-      <h2>Contador de Alfabeto</h2>
-      <p>Ingrese un palabra:</p>
-      <input id="abc" type="text" name="" value="">
-      <button onclick="contarAlfabeto()" type="button" name="button">Contar Vocales</button>
-    </div>
-  </div>
 
-  <footer>
-    <p>Derechos reservados.</p>
-  </footer>
+    <footer>
+      <p>Derechos reservados.</p>
+    </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script src="../script/Mensajes.js" charset="utf-8"></script>
-  <script src="../script/Contador_de_diguitos.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="../script/scroll.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../script/Mensajes.js" charset="utf-8"></script>
+    <script src="../script/Contador_de_diguitos.js" charset="utf-8"></script>
 </body>
