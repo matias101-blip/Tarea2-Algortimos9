@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frases Iguales</title>
-</head>
-<body>
-    <div>
-<h2>Frases Iguales</h2>
-<p>Ingrese dos frases</p>
-<input type="text" id="text1">
-<input type="text" id="text2">
-<button onclick="FrasesIguales()">Comparar</button>
-    </div>
 
-    <script src="../../script/Condicionales/FrasesIguales.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../styles/skeleton.css">
+  <link rel="stylesheet" href="../../styles/style.css">
+  <title>Frases Iguales</title>
+</head>
+
+<body>
+  <header>
+    <nav class="nav-bar u-full-width">
+      <img src="../../img/unemi-logo.png" alt="logo">
+      <p><a href="../../index.html">Inicio</a></p>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="hero sub-contenedor">
+      <h2>Frases Iguales</h2>
+      <p>Ingrese dos frases</p>
+      <div class="mini-contenedor">
+        <div class="entrada">
+          <p>Frase 1:</p>
+          <input type="text" id="text1" placeholder="Ingrese la frase 1">
+        </div>
+        <div class="entrada">
+          <p>Frase 2:</p>
+          <input type="text" id="text2" placeholder="Ingrese la frase 2">
+        </div>
+      </div>
+      <button onclick="FrasesIguales()">Comparar</button>
+    </div>
+  </div>
+
+
+  <script src="../../script/Condicionales/FrasesIguales.js"></script>
 </body>
+
 </html>

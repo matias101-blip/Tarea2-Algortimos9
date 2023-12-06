@@ -1,19 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../styles/skeleton.css">
+  <link rel="stylesheet" href="../../styles/style.css">
+  <title>BMI</title>
 </head>
+
 <body>
-    <H2>Indice de masa corporal</H2>
-    <h3>Ingrese su peso y altura</h3>
-    <input type="text" id="peso">
-    <input type="text" id="estatura">
-    <button onclick="bmi()">Calcular BMI</button>
-    <label for="" id="imc"></label>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="../../script/Mensajes.js" charset="utf-8"></script>
-    <script src="../../script/Condicionales/BMI.js"></script>
+  <header>
+    <nav class="nav-bar u-full-width">
+      <img src="../../img/unemi-logo.png" alt="logo">
+      <p><a href="../../index.html">Inicio</a></p>
+    </nav>
+  </header>
+  <div class="container ">
+    <div class="hero sub-contenedor">
+      <h2>Indice de masa corporal</h2>
+      <h3>Ingrese su peso y altura</h3>
+      <div class="mini-contenedor">
+        <div class="entrada">
+          <p>Peso:</p>
+          <input placeholder="Ingrese su peso." type="text" id="peso">
+        </div>
+        <div class="entrada">
+          <p>Estatura:</p>
+          <input placeholder="Ingrese su estarura" type="text" id="estatura">
+        </div>
+      </div>
+      <button onclick="bmi()">Calcular BMI</button>
+      <label for="" id="imc"></label>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../../script/Mensajes.js" charset="utf-8"></script>
+  <script src="../../script/Condicionales/BMI.js"></script>
 </body>
+
 </html>

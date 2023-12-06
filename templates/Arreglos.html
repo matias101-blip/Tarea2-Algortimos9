@@ -6,10 +6,11 @@
   <script type="module">
     import sweetalert2 from 'https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/+esm'
   </script>
-
+  <link rel="stylesheet" href="./node_modules/sweetalert2/dist/sweetalert2.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/skeleton.css">
   <link rel="stylesheet" href="../styles/index.css">
 
   <title>Arreglo</title>
@@ -17,52 +18,60 @@
 
 <body>
   <header>
-    <nav class="nav-bar">
+    <nav class="nav-bar bottom">
       <img src="../img/unemi-logo.png" alt="logo">
       <p><a href="../index.html">Inicio</a></p>
     </nav>
 
     <div class="head">
-      <h1>Arreglos:</h1>
-      <p>Un arreglo, también conocido como array en inglés, es una estructura de datos que organiza elementos del mismo tipo en una secuencia contigua de memoria. Cada elemento en el arreglo está identificado por un índice o una clave</p>
+      <h1 class="left">Arreglos:</h1>
+      <p class="top-hero">Un arreglo, también conocido como array en inglés, es una estructura de datos que organiza elementos del mismo tipo en una secuencia contigua de memoria. Cada elemento en el arreglo está identificado por un índice o una
+        clave</p>
     </div>
   </header>
-  <div class="contenedor">
-    <div data-value="Expresiones.html" class="sub-contenedores ExprecionesMath">
-      <h2>Suma de elementos:</h2>
-      <p>Mediante un arreglo de numeros enteros se suman todos sus elemento.</p>
+  <div class="container">
+    <div class="row">
+      <div data-value="" class="four columns sub-contenedores ExprecionesMath top-hero">
+        <h2>Suma de elementos:</h2>
+        <p>Mediante un arreglo de numeros enteros se suman todos sus elemento.</p>
+      </div>
+      <div data-value="" class="four columns sub-contenedores Secuenciales top-hero">
+        <h2>Promedio de Calificaciones:</h2>
+        <p>Mediante un arreglo de calificaciones se sacara el promedio.</p>
+      </div>
+      <div data-value="" class="four columns sub-contenedores Condicionales top-hero">
+        <h2>Mayor y menor valor:</h2>
+        <p>En cuentra el el valor minimo y maximo en un arreglo.</p>
+      </div>
     </div>
-    <div data-value="Secuenciales.html" class="sub-contenedores Secuenciales">
-      <h2>Promedio de Calificaciones:</h2>
-      <p>Mediante un arreglo de calificaciones se sacara el promedio.</p>
+    <div class="row">
+      <div data-value="" class="four columns sub-contenedores Bucles bottom">
+        <h2>Buscar un elemento:</h2>
+        <p>Pide al usuario un numero y lo busca si esta presente en el arreglo.</p>
+      </div>
+      <div data-value="" class="four columns sub-contenedores Arreglos bottom">
+        <h2>Contar elementos pares:</h2>
+        <p>En un arreglo de numeros pares se contaran los numeros pares que se encuentre.</p>
+      </div>
+      <div data-value="" class="four columns sub-contenedores Arreglos bottom">
+        <h2>Inversion de un arreglo:</h2>
+        <p>Se invierte el orden de un arreglo.</p>
+      </div>
     </div>
-    <div data-value="Condicionales.html" class="sub-contenedores Condicionales">
-      <h2>Mayor y menor valor:</h2>
-      <p>En cuentra el el valor minimo y maximo en un arreglo.</p>
-    </div>
-    <div data-value="Bucles.html" class="sub-contenedores Bucles">
-      <h2>Buscar un elemento:</h2>
-      <p>Pide al usuario un numero y lo busca si esta presente en el arreglo.</p>
-    </div>
-    <div data-value="Arreglos.html" class="sub-contenedores Arreglos">
-      <h2>Contar elementos pares:</h2>
-      <p>En un arreglo de numeros pares se contaran los numeros pares que se encuentre.</p>
-    </div>
-    <div data-value="Arreglos.html" class="sub-contenedores Arreglos">
-      <h2>Inversion de un arreglo:</h2>
-      <p>Se invierte el orden de un arreglo.</p>
-    </div>
-    <div data-value="Arreglos.html" class="sub-contenedores Arreglos">
-      <h2>Buscar indice:</h2>
-      <p>El ususario ingresa un valor y se buscara en el arreglo si, el valor esta mas de una vez se mostrara todos los indices.</p>
+    <div class="row">
+      <div data-value="" class="eleven columns sub-contenedores Arreglos top">
+        <h2>Buscar indice:</h2>
+        <p>El ususario ingresa un valor y se buscara en el arreglo si, el valor esta mas de una vez se mostrara todos los indices.</p>
+      </div>
     </div>
   </div>
-  
+
   <footer>
     <p>Derechos reservados</p>
   </footer>
 
-
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="../script/scroll.js" charset="utf-8"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="../script/Mensajes.js" charset="utf-8"></script>
   <script src="./script/div-click.js" charset="utf-8"></script>

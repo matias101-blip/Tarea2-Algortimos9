@@ -1,17 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de tarifa</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../styles/skeleton.css">
+  <link rel="stylesheet" href="../../styles/style.css">
+  <title>Calculadora de tarifa</title>
 </head>
+
 <body>
-    <div>
-        <h2>Calculadora de tarifa de envio</h2>
-        <p>Ingrese la distancia de envio en kilometros</p>
-        <input type="text" id="distancia">
-        <button onclick="CalculadoraDeEnvio()">Calcular</button>
+  <header>
+    <nav class="nav-bar u-full-width">
+      <img src="../../img/unemi-logo.png" alt="logo">
+      <p><a href="../../index.html">Inicio</a></p>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="hero sub-contenedor">
+      <h2>Calculadora de tarifa de envío</h2>
+      <p>Ingrese la distancia de envío en kilómetros</p>
+      <div class="mini-contenedor">
+        <div class="entrada">
+          <p>Distancia:</p>
+          <input placeholder="Ingrese la distancia." type="text" id="distancia">
+        </div>
+      </div>
+      <button onclick="CalculadoraDeEnvio()">Calcular</button>
     </div>
-    <script src="../../script/Condicionales/CalculadoraDeEnvio.js"></script>
+  </div>
+  </div>
+  <script src="../../script/Condicionales/CalculadoraDeEnvio.js"></script>
 </body>
+
 </html>

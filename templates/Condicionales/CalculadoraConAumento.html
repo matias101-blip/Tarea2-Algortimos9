@@ -1,19 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de sueldo con aumento</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../styles/skeleton.css">
+  <link rel="stylesheet" href="../../styles/style.css">
+  <title>Calculadora de sueldo con aumento</title>
 </head>
+
 <body>
-    <div>
-        <h2>Calculadora de sueldo con aumento</h2>
-        <p>Ingrese su sueldo</p>
-        <input type="text" id="sueldo">
-        <p>ingrese el porcentaje de aumento</p>
-        <input type="text" id="aumento">
-        <button onclick="CalculadoraConAumento()">Calcular</button>
+  <header>
+    <nav class="nav-bar u-full-width">
+      <img src="../../img/unemi-logo.png" alt="logo">
+      <p><a href="../../index.html">Inicio</a></p>
+    </nav>
+  </header>
+  <div class="container ">
+    <div class="hero sub-contenedor">
+      <h2>Calculadora de sueldo con aumento</h2>
+      <p>Ingrese su sueldo y el porcentaje de aumento.</p>
+      <div class="mini-contenedor">
+        <div class="entrada">
+          <p>Sueldo:</p>
+          <input placeholder="Ingrese el sueldo." type="text" id="sueldo">
+        </div>
+        <div class="entrada">
+          <p>Aumento:</p>
+          <input placeholder="Ingrese el aumento." type="text" id="aumento">
+        </div>
+      </div>
+      <button onclick="CalculadoraConAumento()">Calcular</button>
     </div>
-    <script src="../../script/Condicionales/CalculadoraConAumento.js"></script>
+  </div>
+
+  <script src="../../script/Condicionales/CalculadoraConAumento.js"></script>
 </body>
+
 </html>

@@ -1,25 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Numero mayor</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../styles/skeleton.css">
+  <link rel="stylesheet" href="../../styles/style.css">
+  <title>Numero mayor</title>
 </head>
+
 <body>
-    <h2>Encontrar el numero mayor de los 3</h2>
-    <h3>Ingrese 3 digitos</h3>
-    <label for="num1">Numero 1</label>
-    <input type="number" id="num1"><br>
+  <header>
+    <nav class="nav-bar u-full-width">
+      <img src="../../img/unemi-logo.png" alt="logo">
+      <p><a href="../../index.html">Inicio</a></p>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="hero sub-contenedor">
+      <h2>Encontrar el número mayor de los 3</h2>
+      <h3>Ingrese 3 dígitos</h3>
+      <div class="mini-contenedor">
+        <div class="entrada">
+          <label for="num1">Número 1:</label>
+          <input type="number" id="num1">
+        </div>
+        <div class="entrada">
+          <label for="num2">Número 2:</label>
+          <input type="number" id="num2">
+        </div>
+        <div class="entrada">
+          <label for="num3">Número 3:</label>
+          <input type="number" id="num3">
+        </div>
+      </div>
+      <button onclick="mayorde3num()">Número mayor de 3</button>
+      <p id="resultado"></p>
+    </div>
+  </div>
 
-    <label for="num2">Numero 2</label>
-    <input type="number" id="num2"><br>
 
-    <label for="num3">Numero 3</label>
-    <input type="number" id="num3">
-
-    <button onclick="mayorde3num()">Numero mayor de 3</button>
-
-    <p id="resultado"></p>
-    <script src="../../script/Condicionales/Mayor de 3 num.js"></script>
+  <script src="../../script/Condicionales/Mayor de 3 num.js"></script>
 </body>
+
 </html>

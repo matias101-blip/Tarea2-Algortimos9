@@ -1,18 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de articulos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../styles/skeleton.css">
+  <link rel="stylesheet" href="../../styles/style.css">
+  <title>Calculadora de articulos</title>
 </head>
+
 <body>
-    <div>
-        <h2>Calculadora de articulos</h2>
-        <p>Ingrese el valor de sus articulos</p>
-        <input type="text" id="articulos">
-        <button onclick="AniadirArticulos()">agregar</button>
+  <header>
+    <nav class="nav-bar u-full-width">
+      <img src="../../img/unemi-logo.png" alt="logo">
+      <p><a href="../../index.html">Inicio</a></p>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="hero sub-contenedor">
+      <h2>Calculadora de artículos</h2>
+      <p>Ingrese el valor de sus artículos</p>
+      <div class="mini-contenedor">
+        <div class="entrada">
+          <p>Artículos:</p>
+          <input placeholder="Ingrese el precio."  type="text" id="articulos">
+        </div>
+      </div>
+      <div class="mini-contenedor">
+        <button onclick="AniadirArticulos()">Agregar</button>
         <button onclick="CalculadoraMultiplesArt()">Confirmar</button>
+      </div>
     </div>
-    <script src="../../script/Condicionales/CalculadoraMultiplesArt.js"></script>
+  </div>
+
+
+  <script src="../../script/Condicionales/CalculadoraMultiplesArt.js"></script>
 </body>
+
 </html>

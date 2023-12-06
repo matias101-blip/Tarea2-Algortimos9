@@ -1,17 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Negativo Positivo o 0</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../styles/skeleton.css">
+  <link rel="stylesheet" href="../../styles/style.css">
+  <title>Negativo Positivo o 0</title>
 </head>
+
 <body>
-    <h2>Negativo Positivo o 0</h2>
-    <H3>Ingrese un digito</H3>
-    <input type="text" id="num">
-        <button onclick="negativoypositivo()" >verificar</button>
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="../../script/Mensajes.js" charset="utf-8"></script>
-        <script src="../../script/Condicionales/NegativoyPositivo.js"></script>
+  <header>
+    <nav class="nav-bar u-full-width">
+      <img src="../../img/unemi-logo.png" alt="logo">
+      <p><a href="../../index.html">Inicio</a></p>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="hero sub-contenedor">
+      <h2>Negativo, Positivo o 0</h2>
+      <h3>Ingrese un dígito</h3>
+      <div class="mini-contenedor">
+        <div class="entrada">
+          <p>Dígito:</p>
+          <input type="text" id="num" placeholder="Ingrese un dígito">
+        </div>
+      </div>
+      <button onclick="negativoypositivo()">Verificar</button>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../../script/Mensajes.js" charset="utf-8"></script>
+  <script src="../../script/Condicionales/NegativoyPositivo.js"></script>
 </body>
+
 </html>

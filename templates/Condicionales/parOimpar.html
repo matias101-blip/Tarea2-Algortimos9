@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Par o Impar</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../styles/skeleton.css">
+  <link rel="stylesheet" href="../../styles/style.css">
+  <title>Par o Impar</title>
 
 </head>
+
 <body>
-    <section>
-        <h2> Par o Impar</h2>
-        <h3>Ingrese un digito</h3>
-        <input type="text" id="num1">
-        <label for="" id="mostrar"></label>
-        <button onclick="parOimpar()" >verificar</button>
-    </section>
-    <script src="../script/Condicionales/parOimpar.js"></script>
+  <header>
+    <nav class="nav-bar u-full-width">
+      <img src="../../img/unemi-logo.png" alt="logo">
+      <p><a href="../../index.html">Inicio</a></p>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="hero sub-contenedor">
+      <h2>Negativo, Positivo o 0</h2>
+      <h3>Ingrese un dígito</h3>
+      <div class="mini-contenedor">
+        <div class="entrada">
+          <p>Dígito:</p>
+          <input type="text" id="num" placeholder="Ingrese un dígito">
+        </div>
+      </div>
+      <button onclick="negativoypositivo()">Verificar</button>
+    </div>
+  </div>
+
+
+  <script src="../script/Condicionales/parOimpar.js"></script>
 </body>
+
 </html>

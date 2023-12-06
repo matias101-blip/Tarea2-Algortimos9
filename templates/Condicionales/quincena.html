@@ -1,16 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quincena</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../styles/skeleton.css">
+  <link rel="stylesheet" href="../../styles/style.css">
+  <title>Quincena</title>
 </head>
+
 <body>
-    <h2>Verifica si el dia es de la primera o segunda quincena</h2>
-    <input type="text" id="dia">
-    <button onclick="quincena()">Verificar</button>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="../../script/Mensajes.js" charset="utf-8"></script>
-    <script src="../../script/Condicionales/quincena.js"></script>
+  <header>
+    <nav class="nav-bar u-full-width">
+      <img src="../../img/unemi-logo.png" alt="logo">
+      <p><a href="../../index.html">Inicio</a></p>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="hero sub-contenedor">
+      <h2>Verifica si el día es de la primera o segunda quincena</h2>
+      <div class="mini-contenedor">
+        <div class="entrada">
+          <p>Día:</p>
+          <input type="text" id="dia" placeholder="Ingrese el día">
+        </div>
+      </div>
+      <button onclick="quincena()">Verificar</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../../script/Mensajes.js" charset="utf-8"></script>
+  <script src="../../script/Condicionales/quincena.js"></script>
 </body>
+
 </html>

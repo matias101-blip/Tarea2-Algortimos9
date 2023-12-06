@@ -28,7 +28,30 @@ var AnimatedLeft = {
   delay: 150
 }
 
-ScrollReveal().reveal('.left', AnimatedLeft)
+var AnimatedRight = {
+  distance: '10em',
+  origin: 'right',
+  opacity: 0,
+  delay: 150
+}
+
+var AnimatedLeftHero = {
+  distance: '10em',
+  origin: 'left',
+  opacity: 0,
+  duration: 2000
+}
+
+var AnimatedRightHero = {
+  distance: '10em',
+  origin: 'right',
+  opacity: 0,
+  duration: 2000
+}
+ScrollReveal().reveal('.right-hero', AnimatedRightHero);
+ScrollReveal().reveal('.left-hero', AnimatedLeftHero);
+ScrollReveal().reveal('.right', AnimatedRight);
+ScrollReveal().reveal('.left', AnimatedLeft);
 ScrollReveal().reveal('.top-hero', AnimatedTopHero)
 ScrollReveal().reveal('.top', AnimateTop);
 ScrollReveal().reveal('.bottom', AnimateBottom);

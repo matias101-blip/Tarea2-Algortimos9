@@ -1,17 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../styles/skeleton.css">
+  <link rel="stylesheet" href="../../styles/style.css">
+  <title>Descuento</title>
 </head>
+
 <body>
-    <h2>Ingrese precio y unidades a llevar</h2>
-    <input type="text" id="precio">
-    <input type="text" id="unidad">
-    <button onclick="descuento()">Mostrar</button>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="../../script/Mensajes.js" charset="utf-8"></script>
-    <script src="../../script/Condicionales/descuentos.js"></script>
+  <header>
+    <nav class="nav-bar u-full-width">
+      <img src="../../img/unemi-logo.png" alt="logo">
+      <p><a href="../../index.html">Inicio</a></p>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="hero sub-contenedor">
+      <h2>Descuento por volumen de compra.</h2>
+      <h3>Ingrese el precio y la unidades.</h3>
+      <div class="mini-contenedor">
+        <div class="entrada">
+          <p>Precio:</p>
+          <input placeholder="Ingrese el precio." type="text" id="precio">
+        </div>
+        <div class="entrada">
+          <p>Unidad:</p>
+          <input placeholder="Ingrese las unidades"  type="text" id="unidad">
+        </div>
+      </div>
+      <button onclick="descuento()">Mostrar</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../../script/Mensajes.js" charset="utf-8"></script>
+  <script src="../../script/Condicionales/descuentos.js"></script>
 </body>
+
 </html>

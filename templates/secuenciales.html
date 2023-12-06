@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/normalize.css">
+  <link rel="stylesheet" href="../styles/skeleton.css">
+  <link rel="stylesheet" href="../styles/style.css">
+  <title>secuenciales</title>
+</head>
+
+<body>
+
+  <header>
+    <nav class="nav-bar u-full-width bottom">
+      <img src="../img/unemi-logo.png" alt="logo">
+      <p><a href="../index.html">Inicio</a></p>
+    </nav>
+  </header>
+  <div class="hero left">
+    <h1>Secuenciales</h1>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="four columns sub-caja top-hero">
+        <h2>Suma de dos números:</h2>
+        <p>Escribe un programa que tome dos números como
+          entrada y muestre su suma</p>
+        <input id="a">
+        <input id="b">
+        <button onclick="Ejercicio_11()" type="button" name="Ejercicio_11">Ejecutar</button>
+      </div>
+
+      <div class="four columns sub-caja top-hero">
+        <h2>Área de un triángulo:</h2>
+        <p>Pide al usuario que ingrese la base y la altura de un triángulo,
+          luego calcula y muestra su área </p>
+        <input id="base">
+        <input id="altura">
+        <button onclick="Ejercicio_12()" type="button" name="Ejercicio_12">Ejecutar</button>
+      </div>
+
+      <div class="four columns sub-caja top-hero">
+        <h2>Número par o impar:</h2>
+        <p>Solicita al usuario que ingrese un número e indica si es
+          par o impar </p>
+        <input id="a">
+        <button onclick="Ejercicio_13()" type="button" name="Ejercicio_13">Ejecutar</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="four columns sub-caja bottom">
+        <header>
+          <h2>Calculadora simple:</h2>
+        </header>
+        <p>Crea una calculadora que realice operaciones básicas
+          como suma, resta, multiplicación y división, según la elección del usuario</p>
+        <label>Numero 1 : </label>
+        <input type="number" name="" id="valor1" autofocus placeholder="digite un Numero">
+        <br>
+        <br>
+        <label>Numero 2 : </label>
+        <input type="number" name="" id="valor2" autofocus placeholder="digite un numero">
+        <br>
+        <br>
+        <button type="button" onclick="suma()">suma</button>
+        <button onclick="restar()" type="button">resta</button>
+        <button onclick="multiplicar()" type="button">multiplicar</button>
+        <button onclick="dividir()" type="button">dividir</button>
+        <br>
+        <p>El resultado es: <span id="resultado"></span></p>
+      </div>
+
+      <div class="four columns sub-caja bottom">
+        <header>
+          <h2>Tabla de multiplicar:</h2>
+        </header>
+        <p>Pide al usuario un número y muestra su tabla de
+          multiplicar del 1 al 10 </p>
+        <label>desde :</label>
+        <input type="number" name="" id="desde" autofocus placeholder="Digite dese donde iniciara">
+        <br>
+        <br>
+        <label>hasta :</label>
+        <input type="number" name="" id="hasta" autofocus placeholder="Digite hasta donde terminara">
+        <br>
+        <br>
+        <label>tabla</label>
+        <input type="number" name="" id="por" autofocus placeholder="Digite la tabla que desea">
+        <button onclick="Ejercicio_15()">Ejecutar</button>
+        <br>
+        <p>El resultado es: <span id="resul"></span></p>
+      </div>
+
+      <div class="four columns sub-caja bottom">
+        <header>
+          <h2>Copiar palabra:</h2>
+        </header>
+        <p>Escribe un programa que lea dos palabras y concatena en otra
+          variable las dos palabra </p>
+        <label> </label>
+        <input type="text" name="" id="frase1" autofocus placeholder="Digite la primera palabra">
+        <label> </label>
+        <input type="text" name="" id="frase2" autofocus placeholder="Digite la segunda palabra">
+        <button onclick="Ejercicio_16()">Ejecutar</button>
+        <br>
+
+        <p> El resultado es: <span id="re"></span></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="../script/scroll.js" charset="utf-8"></script>
+  <script src="../js/secuenciales.js"> </script>
+
+</body>
+
+</html>

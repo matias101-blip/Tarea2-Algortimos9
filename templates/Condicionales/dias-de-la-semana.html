@@ -1,17 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../styles/skeleton.css">
+  <link rel="stylesheet" href="../../styles/style.css">
+  <title>Dia de la semana</title>
 </head>
+
 <body>
-    <h2>Dias de la semana</h2>
-    <h4>Ingrese un Numero del 1 al 7</h4>
-    <input type="text" id="dia">
-    <button onclick="semana()">Mostrar</button>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="../../script/Mensajes.js" charset="utf-8"></script>
-    <script src="../../script/Condicionales/dias-de-la-semana.js"></script>
+  <header>
+    <nav class="nav-bar u-full-width">
+      <img src="../../img/unemi-logo.png" alt="logo">
+      <p><a href="../../index.html">Inicio</a></p>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="hero sub-contenedor">
+      <h2>Días de la semana</h2>
+      <h4>Ingrese un número del 1 al 7</h4>
+      <div class="mini-contenedor">
+        <div class="entrada">
+          <p>Número:</p>
+          <input type="text" id="dia" placeholder="Ingrese un número del 1 al 7">
+        </div>
+      </div>
+      <button onclick="semana()">Mostrar</button>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../../script/Mensajes.js" charset="utf-8"></script>
+  <script src="../../script/Condicionales/dias-de-la-semana.js"></script>
 </body>
+
 </html>
