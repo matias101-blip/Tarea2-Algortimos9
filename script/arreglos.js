@@ -1,4 +1,18 @@
-//promediar nota
+function Contador(){
+    debugger;
+    var arreglo = [1,2,3,4,5,6,7,8,9,10]
+    var i 
+    var contador=0
+    var suma=0
+    for(i=0;i<arreglo.length;i++){
+        var numero = arreglo[i]
+        if(numero%2 == 0){
+            suma=numero+suma
+        }
+    }
+    alert(suma)
+}
+/*promediar nota
 let notas=[]
 function Notas(){
     debugger;
@@ -19,7 +33,7 @@ function Promediar(){
     promedio=suma/notas.length
     alert(promedio)
     notas=[]
-}
+}*/
 
 
 /*function numeros() {
